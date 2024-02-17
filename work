@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<head>
-</head>
-<body>
-  <p>Hello World!</p>
-</body>
+<html lang="en-US"
+  <head>
+  </head>
+  <body>
+    <p>Hello World!</p>
+  </body>
+</html>
