@@ -39,9 +39,6 @@ ol {
 ol li {
     margin-bottom: 8px;
 }
-em {
-    font-weight: 300;
-}
 .highlight {
     background-color: var(--highlight);
 }
