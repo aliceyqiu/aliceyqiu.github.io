@@ -275,9 +275,9 @@ p5 { /*black small desc text p*/
     margin-bottom: 8vh;
     transition: ease-in-out 400ms;
 }
-.work a:hover {
+/*.work a:hover {
     opacity: 0.8;
-}
+} */
 .project-thumbnail {
     border-radius: 1rem;
     border: #15151c 1.5px solid;
