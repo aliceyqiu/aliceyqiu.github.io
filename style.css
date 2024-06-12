@@ -854,6 +854,9 @@ footer {
     .proj-hero1 p4 {
         margin-top: -2vh;
     }
+    .wider {
+        max-width: 100%;
+    }
     .proj-hero2 {
         display: flex;
         flex-direction: row;
