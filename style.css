@@ -449,7 +449,7 @@ ul.proj-nav  {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    padding: vh 8vw 4vh 8vw;
+    padding: 2vh 8vw 4vh 8vw;
     border-radius: 1rem;
     border: #15151c 1px solid;
 }
@@ -681,7 +681,7 @@ ul.proj-nav  {
 #pt1-2 a:link, #pt1-2 a:visited, .facts a:link, .facts a:visited {
     color: var(--blue);
 }
-#pt1-2 a:hover. .facts a:hover {
+#pt1-2 a:hover, .facts a:hover {
     color: var(--black);
 }
 .outlined-graphic ol{
