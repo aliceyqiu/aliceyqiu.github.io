@@ -8,7 +8,6 @@
     --body-font: Futura, Helvetica, sans-serif;
     --highlight: rgba(255, 34, 180, 0.3);
 }
-
 * {
     box-sizing: border-box;
 }
@@ -138,9 +137,9 @@ p2 { /*black body desc. p*/
 p3 { /*black body text p*/
     color: var(--black);
     font-family: var(--body-font);
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
-    line-height: 1.75rem;
+    line-height: 1.7em;
 }
 p4 { /*black body minor text p*/
     color: var(--black);
@@ -450,9 +449,25 @@ ul.proj-nav  {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 1vh 8vw 4vh 8vw;
+    padding: vh 8vw 4vh 8vw;
     border-radius: 1rem;
     border: #15151c 1px solid;
+}
+.facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+    padding: 3vh 4vw 4vh 4vw;
+    border-radius: 1rem;
+    border: #15151c 1px solid;
+    align-items: center;
+}
+.facts ul {
+    color: var(--black);
+    font-family: var(--body-font);
+    font-size: 1rem;
+    line-height: 1.5em;
+    align-self: flex-end;
 }
 .proj-deets-sub {
     display: flex;
@@ -809,6 +824,9 @@ footer {
         font-weight: 300;
         line-height: 1.2rem;
     }
+    .facts img {
+        width: 80%;
+    }
     .work a:link, .work a:active {
         display: flex;
         flex-direction: column;
@@ -851,11 +869,11 @@ footer {
         padding: 2vh 2vw;
         border-radius: 1rem;
     }
-    .proj-hero1 p4 {
-        margin-top: -2vh;
-    }
     .wider {
         max-width: 100%;
+    }
+    .proj-hero1 p4 {
+        margin-top: -2vh;
     }
     .proj-hero2 {
         display: flex;
@@ -903,13 +921,11 @@ footer {
         margin: 0px;
     }
     h3 { /*smaller black heading*/
+        font-size: 1.5rem;
         line-height: 1.25em;
-        font-weight: bold;
-        margin-block: 0;
-        margin-bottom: 0em;
     }
     h4 { /*small black heading*/
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         line-height: 1.25em;
         margin-top: 1rem;
         margin-bottom: .20em;
@@ -955,6 +971,10 @@ footer {
         flex-direction: column;
         gap: 2vw;
     }
+    .lined-paper {
+        background-position: center;
+        background-size:contain;
+    }
     .top-left, .bottom-right {
         height: 15%;
         width: auto;
@@ -967,6 +987,17 @@ footer {
         width: 50vw;
         height: auto;
         align-self: center;
+    }
+    .facts {
+        display: flex;
+        flex-direction: column;
+        gap: 0vw;
+        padding: 2vh 4vw 2vh 4vw;
+        align-items: flex-start;
+    }
+    .facts img {
+        align-self: center;
+        width: 50%;;
     }
     .page-body {
         gap: 4vh;
@@ -1117,7 +1148,7 @@ footer {
         height: 2vh;
     }
     #chall {
-        grid-column: 1 / span 1;
+        grid-column: 3 / span 1;
         grid-row: 3 / span 1;
         align-self: flex-start;
     }
