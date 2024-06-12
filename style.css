@@ -678,10 +678,10 @@ ul.proj-nav  {
     grid-auto-columns: 1fr;
     gap: 1vw;
 }
-#pt1-2 a:link, #pt1-2 a:visited {
+#pt1-2 a:link, #pt1-2 a:visited, .facts a:link, .facts a:visited {
     color: var(--blue);
 }
-#pt1-2 a:hover {
+#pt1-2 a:hover. .facts a:hover {
     color: var(--black);
 }
 .outlined-graphic ol{
