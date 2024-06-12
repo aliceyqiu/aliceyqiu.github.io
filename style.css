@@ -663,6 +663,12 @@ ul.proj-nav  {
     grid-auto-columns: 1fr;
     gap: 1vw;
 }
+#pt1-2 a:link, #pt1-2 a:visited {
+    color: var(--blue);
+}
+#pt1-2 a:hover {
+    color: var(--black);
+}
 .outlined-graphic ol{
     color: var(--black);
     font-family: var(--body-font);
@@ -1014,15 +1020,14 @@ footer {
     .proj{
         display: flex;
         flex-direction: column;
-        padding: 6vh 2vw 8vh 2vw;
+        padding: 6vh 4vw 8vh 4vw;
         gap: 4vh;
     }
     .testing {
         display: grid;
         row-gap: 4vh;
         padding: 0;
-        justify-items: stretch;
-        justify-self: left;
+        justify-items: flex-start;
     }
     ul.proj-nav  {
         display: none;
@@ -1049,7 +1054,7 @@ footer {
         display: flex;
         flex-flow: column;
         gap: 1em;
-        padding: 0vh 1vw 0vh 1vw;
+        padding: 0vh 2vw 0vh 2vw;
         align-items: flex-start;
         align-self: stretch;
         /*padding: 0vh 8vw;*/
