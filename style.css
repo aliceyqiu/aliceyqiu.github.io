@@ -543,6 +543,9 @@ ul.proj-nav  {
 .onespansix {
     grid-column: 1 / span 6;
 }
+#timelinepng {
+    overflow-x: scroll;
+}
 /*
 .outlined-graphic {
     display: flex;
