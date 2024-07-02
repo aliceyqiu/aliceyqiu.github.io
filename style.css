@@ -132,7 +132,11 @@ p2 { /*black body desc. p*/
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 2rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+.spacier {
+    line-height: 1.9em;
 }
 p3 { /*black body text p*/
     color: var(--black);
@@ -189,7 +193,7 @@ p5 { /*black small desc text p*/
 
 .page-header {
     position: relative;
-    padding: 14vh 4vw;
+    padding: 12vh 4vw;
     display: flex;
     flex-direction: row;
     gap: 4vw;
@@ -222,11 +226,15 @@ p5 { /*black small desc text p*/
     display: flex;
     flex-direction: column;
     gap: 0rem;
-    margin: 14vh 12vw;
+    margin: 16vh 12vw;
     z-index: 1;
 }
 .about-me {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    z-index: 1;
+    margin: -2vh 0vw;
     padding-top: 0vh;
     padding-bottom: 2vh;
 }
@@ -372,6 +380,30 @@ ul.work {
 .work a:hover .project-thumbnail {
     box-shadow: 10px 10px 0px gray;
 }
+.project-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    height: 100%;
+}
+.skills-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1vw;
+    max-width: 100%;
+}
+.skillbtn {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: var(--black);
+    background-color: white;
+    border-radius: 1rem;
+    border: 1px var(--black) solid;
+    width: max-content;
+    padding: .5vh 1vw;
+}
 .title-arrow {
     display: flex;
     flex-direction: row;
@@ -401,7 +433,7 @@ ul.work {
     display: flex;
     flex-direction: column;
     gap: 2vh;
-    margin-bottom: 10vh;
+    margin-bottom: 8vh;
 }
 .proj{
     display: grid;
@@ -743,6 +775,46 @@ ul.proj-nav  {
     max-width: 20vw;
     height: 100%;
 }
+
+section.photos {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    padding: 6vh 4vw 16vh 4vw;
+    align-items: center;
+}
+section h3 {
+    scroll-margin-top: 16vh;
+}
+.photos a {
+    position: sticky;
+    top: 16vh;
+    color: var(--page-color);
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    width: fit-content;
+    padding: 1vh 1vw;
+    align-self: flex-start;
+    border-radius: 1rem;
+    backdrop-filter: blur(5px);
+}
+.mason {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 12vh;
+    gap: 1vw;
+}
+.smason {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.mason-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+} 
+
     
 footer {
     position: sticky;
@@ -803,13 +875,13 @@ footer {
         font-size: 1.25rem;
         line-height: 1.5em;
     }
-    p2 { /*black body desc. p*/
+     p2 { /*black body desc. p*/
         color: var(--black);
         font-family: var(--body-font);
         font-size: 1.25rem;
         font-weight: 300;
         line-height: 2rem;
-        margin-top: 1rem;
+        margin-top: 0rem;
     }
     p3 { /*black body text p*/
         color: var(--black);
@@ -963,7 +1035,10 @@ footer {
         font-size: 1rem;
         font-weight: 300;
         line-height: 1.5em;
-        margin-top: 1em;
+        margin-top: 0em;
+    }
+    .spacier {
+        line-height: 1.5em;
     }
     p4 { /*black body text p*/
         color: var(--black);
