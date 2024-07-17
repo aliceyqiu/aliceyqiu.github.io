@@ -303,6 +303,14 @@ p5 { /*black small desc text p*/
     background-repeat: repeat-x; 
     background-size: cover;
 }
+.proj-header#fotos {
+    background-image: url(images/IMG_0891.PNG);
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode: overlay;
+    background-position: 50% 10%; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
 .proj-hero1 {
     display: flex;
     flex-direction: column;
@@ -332,6 +340,19 @@ p5 { /*black small desc text p*/
     width: auto;
     max-height: 100%;
     object-fit: contain;
+}
+.proj-hero3 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.proj-hero3 ol {
+    margin-left: -6vw;
+    padding-top: 2vh;
+}
+.proj-hero3 a:link, .proj-hero3 a:visited {
+    color: var(--pink);
 }
 .page-body {
     display: flex;
