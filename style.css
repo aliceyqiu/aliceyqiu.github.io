@@ -8,6 +8,7 @@
     --body-font: Futura, Helvetica, sans-serif;
     --highlight: rgba(255, 34, 180, 0.3);
 }
+
 * {
     box-sizing: border-box;
 }
@@ -75,6 +76,12 @@ blockquote {
 .neongreen {
     color: var(--neongreen);
 }
+.pink {
+    color: var(--pink);
+}
+.test {
+    color: rgb(89, 89, 89);
+}
 h1 { /*big blue heading*/
     color:var(--blue);
     font-family: var(--heading-font);
@@ -117,6 +124,14 @@ h5 { /*big 5rem heading*/
     line-height: 1em;
     margin-top: 1vh;
     margin-bottom: 0vh;
+}
+h6 { /*futura heading*/
+    color:var(--black);
+    text-align: center;
+    font-family: var(--body-font);
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0px;
 }
 p1 { /*black header p*/
     color: var(--black);
@@ -311,6 +326,9 @@ p5 { /*black small desc text p*/
     background-repeat: no-repeat; 
     background-size: cover;
 }
+.proj-header#pin {
+    background-color:rgb(210, 55, 51);
+}
 .proj-hero1 {
     display: flex;
     flex-direction: column;
@@ -331,14 +349,13 @@ p5 { /*black small desc text p*/
     flex-direction: row;
     gap: 1vw;
     max-width: 50%;
-    height: 100%;
     align-items: center;
-    justify-content: space-evenly;
-    justify-self: flex-end;
+    justify-content: center;
+    object-fit: contain;
 }
 .proj-hero2 img {
-    width: auto;
-    max-height: 100%;
+    max-width: 50%;
+    height: auto;
     object-fit: contain;
 }
 .proj-hero3 {
@@ -431,7 +448,6 @@ ul.work {
     align-items: center;
     gap: 2vw;
     margin-top: 1vh;
-    margin-bottom: 1vh;
 }
 .title-arrow img {
     object-fit: contain;
@@ -550,7 +566,7 @@ ul.proj-nav  {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height:fit-content;
+    height: fit-content;
 }
 .rokugrid {
     display: grid;
@@ -571,6 +587,12 @@ ul.proj-nav  {
 }
 .twospantwo {
     grid-column: 2 / span 2;
+}
+.twospanfour {
+    grid-column: 2 / span 4;
+}
+.twospanfour ul {
+    list-style-type: none;
 }
 .threespantwo {
     grid-column: 3 / span 2;
@@ -598,6 +620,16 @@ ul.proj-nav  {
 }
 #timelinepng {
     overflow-x: scroll;
+}
+#v2pdf {
+    width: 100%;
+    height: 60vh;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+#v2pdf img {
+    width: 100%;
+    object-fit: contain;
 }
 /*
 .outlined-graphic {
@@ -836,7 +868,6 @@ section h3 {
     gap: 2vh;
 } 
 
-    
 footer {
     position: sticky;
     z-index: 0;
@@ -896,7 +927,7 @@ footer {
         font-size: 1.25rem;
         line-height: 1.5em;
     }
-     p2 { /*black body desc. p*/
+    p2 { /*black body desc. p*/
         color: var(--black);
         font-family: var(--body-font);
         font-size: 1.25rem;
@@ -1008,6 +1039,9 @@ footer {
     }
     .proj-write {
         padding: 0vh 3vw 0vh 3vw;
+    }
+    #v2pdf {
+        height: 43vh;
     }
 }
 
@@ -1293,4 +1327,7 @@ footer {
         display: flex;
         flex-direction: column;
     } 
+    #v2pdf {
+        height: 27vh;
+    }
 }
