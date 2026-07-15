@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="keywords" content="alice qiu, portfolio, healthcare design, service design, UI/UX, innovation">
+        <meta name="description" content="Alice Qiu is a designer amongst other things at the intersection of design & healthcare.">
+        <meta name="description" content="Alice Qiu's portfolio">
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.gstatic.com/s/anton/v27/1Ptgg87LROyAm3Kz-C8CSKlv.woff2" as="font" type="font/woff2" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Sometype+Mono:ital,wght@0,400..700;1,700&family=Zhi+Mang+Xing&family=Anton&display=swap" rel="stylesheet">
+        <title>Alice Qiu's Portfolio!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelectorAll('.zao').forEach(zao => {
+                    zao.addEventListener('mouseenter', () => {
+                        zao.classList.toggle('flipped');
+                    });
+                });
+
+                const honk = document.querySelector('.honk');
+                if (honk) {
+                    honk.addEventListener('click', () => {
+                        const overlay = document.createElement('div');
+                        overlay.className = 'honk-overlay';
+                        overlay.textContent = 'HONK!';
+                        overlay.style.setProperty('--rot', `${(Math.random() * 50 - 25).toFixed(2)}deg`);
+                        overlay.style.setProperty('--pos-x', `${(20 + Math.random() * 60).toFixed(2)}%`);
+                        overlay.style.setProperty('--pos-y', `${(20 + Math.random() * 60).toFixed(2)}%`);
+                        overlay.style.setProperty('--honk-size', `${(8 + Math.random() * 8).toFixed(2)}rem`);
+                        document.body.appendChild(overlay);
+                        setTimeout(() => overlay.remove(), 1800);
+                    });
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <!--nav bar-->
+        <header>
+            <div class="navbar">
+                <a class="tanghulu" href="index2.html" target="_self" alt="alice yisha qiu logo">
+                    <div class="zao">
+                        <div class="inner">
+                            <div class="face front">a</div>
+                            <div class="face back" lang="zh-Hans">邱</div>
+                        </div>
+                    </div>
+                    <div class="zao">
+                        <div class="inner">
+                            <div class="face front">y</div>
+                            <div class="face back" lang="zh-Hans">忆</div>
+                        </div>
+                    </div>
+                    <div class="zao">
+                        <div class="inner">
+                            <div class="face front">q</div>
+                            <div class="face back" lang="zh-Hans">莎</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="navbarnav">
+                    <a href="work.html">work</a>
+                    <a href="https://drive.google.com/file/d/1RNH8KNNuwS2MnmzrjSNZcWYnPjq25zQG/view" rel="noopener" target="_blank">resumé</a>
+                    <a href="about.html">about</a>
+                </div>
+             </div>
+        </header>
+        <main>
+            <section>
+                <div class="title">
+                    <h1>alice<br>yisha<br>qiu</h1>
+                    <div class="bio">
+                        <div class="bio-roles red">
+                            <p1>designer/</p1>
+                            <p1>strategist/</p1>
+                            <p1>researcher/</p1>
+                            <p1>problem-solver/</p1>
+                            <p1 class="honk">silly goose</p1> 
+                        </div>
+                        <p1 style="text-align: center; color: var(--red);">at the intersection of</p1>
+                        <div class="bio-fields red">
+                            <p1>health,</p1>
+                            <p1>care,</p1>
+                            <p1>people,</p1>
+                            <p1>impact,</p1>
+                            <p1>and cool things.</p1> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="line">
+            <section>
+                <div class="work">
+                    <h2 class="red">my work</h2>
+                    <div class="project-list">
+                        <a href="psychedelicatlas.html" target="_self" id="psychedelic atlas">
+                            <div class="project-listing">
+                                <div class="project-thumbnail">
+                                    <img src="images/psych-thumbnail.jpeg" alt="psychedelic atlas thumbnail image">
+                                </div>
+                                <div class="project-description">
+                                    <h3>the psychedelic atlas</h3>
+                                    <p1 class="burgundy">lorem ipsum</p1>
+                                    <div class="skills-wrap">
+                                        <div class="skillbtn">a little bit of everything</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <hr class="dotted-line">
+                        <a href="careQ.html" target="_self" id="careQ">
+                            <div class="project-listing">
+                                <div class="project-thumbnail">
+                                    <img src="images/psych-thumbnail.jpeg" alt="careQ thumbnail image">
+                                </div>
+                                <div class="project-description">
+                                    <h3>careQ</h3>
+                                    <p1 class="burgundy">lorem ipsum</p1>
+                                    <div class="skills-wrap">
+                                        <div class="skillbtn">a little bit of everything</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <hr class="dotted-line">
+                        <a href="healthyspaces.html" target="_self" id="healthy spaces">
+                            <div class="project-listing">
+                                <div class="project-thumbnail">
+                                    <img src="images/psych-thumbnail.jpeg" alt="healthy spaces thumbnail image">
+                                </div>
+                                <div class="project-description">
+                                    <h3>healthy spaces</h3>
+                                    <p1 class="burgundy">Mental health beyond the trip</p1>
+                                    <div class="skills-wrap">
+                                        <div class="skillbtn">a little bit of everything</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <hr class="dotted-line">
+                        <a href="walkytalky.html" target="_self" id="walky talky">
+                            <div class="project-listing">
+                                <div class="project-thumbnail">
+                                    <img src="images/walkytalky-thumbnail.png" alt="walky talky thumbnail image">
+                                </div>
+                                <div class="project-description">
+                                    <h3>walky talky</h3>
+                                    <p1 class="burgundy">Bringing students together through meaningful connections and mental wellness—one step and conversation at a time.</p1>
+                                    <div class="skills-wrap">
+                                        <div class="skillbtn">UX research</div>
+                                        <div class="skillbtn">UI/UX</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <hr class="dotted-line">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footerbar">
+                <h2 class="light">say hi!</h2>
+                <a class="tanghulu" href="index2.html" target="_top" style="line-height: 0;" alt="alice yisha qiu logo">
+                    <div class="zao">
+                        <div class="inner">
+                            <div class="face front">a</div>
+                            <div class="face back" lang="zh-Hans">邱</div>
+                        </div>
+                    </div>
+                    <div class="zao">
+                        <div class="inner">
+                            <div class="face front">y</div>
+                            <div class="face back" lang="zh-Hans">忆</div>
+                        </div>
+                    </div>
+                    <div class="zao">
+                        <div class="inner">
+                            <div class="face front">q</div>
+                            <div class="face back" lang="zh-Hans">莎</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="navbarnav" id="footer">
+                    <a href="mailto:aqiu0329@gmail.com" target="_blank">email</a>
+                    <a href="https://www.linkedin.com/in/alice-qiu-99950b1b2" rel="noopener" target="_blank">LinkedIn</a>
+                    <a href="https://open.spotify.com/track/57VfoS1TXAp5Mx7l12MDNa?si=18a4e55f0b194078" rel="noopener" target="_blank">favorite song atm!</a>
+                </div>
+            </div>
+        </footer>
+       </body>
+</html> 
